@@ -14,8 +14,8 @@
 <span id="app_title" style="display:none">{#searchreplace_dlg.replace_title}</span>
 <form onsubmit="SearchReplaceDialog.searchNext('none');return false;" action="#">
 		<ul id="ccm-advanced-link-tabs" class="ccm-dialog-tabs">
-			<li id="search_tab" aria-controls="search_panel"><span><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;">{#searchreplace.search_desc}</a></span></li>
-			<li id="replace_tab" aria-controls="replace_panel"><span><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;">{#searchreplace_dlg.replace}</a></span></li>
+			<li id="search_tab" aria-controls="search_panel"><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;">{#searchreplace.search_desc}</a></li>
+			<li id="replace_tab" aria-controls="replace_panel"><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;">{#searchreplace_dlg.replace}</a></li>
 		</ul>
 
 	<div class="panel_wrapper">
@@ -90,7 +90,7 @@
 	</div>
 
 	<div class="mceActionPanel ccm-ui">
-		<input type="submit" class="btn" id="insert" name="insert" value="{#searchreplace_dlg.findnext}" />
+		<input type="submit" class="btn primary" id="insert" name="insert" value="{#searchreplace_dlg.findnext}" />
 		<input type="button" class="btn" id="replaceBtn" name="replaceBtn" value="{#searchreplace_dlg.replace}" onclick="SearchReplaceDialog.searchNext('current');" />
 		<input type="button" class="btn" id="replaceAllBtn" name="replaceAllBtn" value="{#searchreplace_dlg.replaceall}" onclick="SearchReplaceDialog.searchNext('all');" />
 		<input type="button" class="btn" id="cancel" name="close" value="{#close}" onclick="tinyMCEPopup.close();" />

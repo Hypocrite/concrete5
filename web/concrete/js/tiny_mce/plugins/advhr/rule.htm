@@ -13,7 +13,7 @@
 <body role="application">
 <form onsubmit="AdvHRDialog.update();return false;" action="#">
 		<ul id="ccm-advanced-link-tabs" class="ccm-dialog-tabs">
-			<li id="general_tab" class="current" aria-controls="general_panel"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#advhr.advhr_desc}</a></span></li>
+			<li id="general_tab" class="current" aria-controls="general_panel"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#advhr.advhr_desc}</a></li>
 		</ul>
 
 	<div class="panel_wrapper">
@@ -50,7 +50,7 @@
 	</div>
 
 	<div class="mceActionPanel ccm-ui">
-		<input type="submit" style="float: right" class="btn" id="insert" name="insert" value="{#insert}" />
+		<input type="submit" style="float: right" class="btn primary" id="insert" name="insert" value="{#insert}" />
 		<input type="button" id="cancel" name="cancel" class="btn" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 	</div>
 </form>

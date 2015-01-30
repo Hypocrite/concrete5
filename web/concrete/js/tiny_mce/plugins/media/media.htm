@@ -15,9 +15,9 @@
 <body style="display: none" role="application">
 <form onsubmit="Media.insert();return false;" action="#">
 			<ul id="ccm-advanced-link-tabs" class="ccm-dialog-tabs">
-				<li id="general_tab" class="current" aria-controls="general_panel"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');Media.formToData();" onmousedown="return false;">{#media_dlg.general}</a></span></li>
-				<li id="advanced_tab" aria-controls="advanced_panel"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');Media.formToData();" onmousedown="return false;">{#media_dlg.advanced}</a></span></li>
-				<li id="source_tab" aria-controls="source_panel"><span><a href="javascript:mcTabs.displayTab('source_tab','source_panel');Media.formToData('source');" onmousedown="return false;">{#media_dlg.source}</a></span></li>
+				<li id="general_tab" class="current" aria-controls="general_panel"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');Media.formToData();" onmousedown="return false;">{#media_dlg.general}</a><</li>
+				<li id="advanced_tab" aria-controls="advanced_panel"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');Media.formToData();" onmousedown="return false;">{#media_dlg.advanced}</a></li>
+				<li id="source_tab" aria-controls="source_panel"><a href="javascript:mcTabs.displayTab('source_tab','source_panel');Media.formToData('source');" onmousedown="return false;">{#media_dlg.source}</a></li>
 			</ul>
 
 		<div class="panel_wrapper">
@@ -914,7 +914,7 @@
 		</div>
 
 		<div class="mceActionPanel ccm-ui">
-			<input type="submit" style="float: right" class="btn" id="insert" name="insert" value="{#insert}" />
+			<input type="submit" style="float: right" class="btn primary" id="insert" name="insert" value="{#insert}" />
 			<input type="button" id="cancel" name="cancel" class="btn" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 		</div>
 	</form>
